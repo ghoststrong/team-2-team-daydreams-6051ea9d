@@ -5,7 +5,7 @@ Library           CreateCharacterLibrary.py
 
 *** Test Cases ***      characterNameInput     characterNameOutput
 Provided name           Erin                   Erin
-Provided name           $_test_results         $_test_results
+Provided name with tokens           $_test_results         $_test_results
 Default name            ${EMPTY}               Character
 
 *** Keywords ***
