@@ -5,5 +5,10 @@ class TestPosition(TestCase):
     def test_init(self):
         COORDINATES = ("3","4")
         testobj = Position(COORDINATES)
-        print(testobj.coordinates)
         self.assertEqual(COORDINATES, testobj.coordinates)
+
+class TestInsanePosition(TestCase):
+    def test_init(self):
+        COORDINATES = ("10","22")
+        testobj = Position(COORDINATES)
+        self.assertEqual(COORINDATES, testobj.coordindates)
