@@ -11,4 +11,4 @@ class TestInsanePosition(TestCase):
     def test_init(self):
         COORDINATES = ("10","22")
         testobj = Position(COORDINATES)
-        self.assertEqual(COORINDATES, testobj.coordindates)
+        self.assertEqual(COORDINATES, testobj.coordinates)
