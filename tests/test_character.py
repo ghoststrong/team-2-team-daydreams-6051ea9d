@@ -13,3 +13,10 @@ class TestCharacterInitWithEmptyName(TestCase):
         EXPECTED_NAME = "Character"
         testobj = Character(EMPTY_NAME)
         self.assertEqual(EXPECTED_NAME, testobj.name)
+
+class TestCharacterGetName(TestCase):
+    def test_init(self):
+        TEST_NAME = "Ryan"
+        testobj = Character(TEST_NAME)
+        result = testobj.getName()
+        self.assertEqual(TEST_NAME, result)

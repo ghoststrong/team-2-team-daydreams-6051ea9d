@@ -6,3 +6,9 @@ class Character:
             self.name = "Character"
         else:
             self.name = character_name
+
+    def getName(self):
+        return self.name
+
+
+
