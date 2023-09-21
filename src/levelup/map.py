@@ -3,7 +3,7 @@
 class GameMap():
     #starting_position = Position(0,0) # we want this to be random in the future
     def __init__(self):
-       self.numPostions = 100
+       self.numPositions = 100
        #self.map_size = 10 # had to think of this in map size
     def getPositions():
         pass
