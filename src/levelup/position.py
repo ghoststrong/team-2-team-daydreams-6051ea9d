@@ -7,4 +7,8 @@ class Position:
     def coordinates():
         return coordinates
 
+    def get_x_coord(self):
+        return self.coordinates[0]
 
+    def get_y_coord(self):
+        return self.coordinates[1]
