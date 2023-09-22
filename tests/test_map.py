@@ -1,12 +1,19 @@
 from unittest import TestCase
 from levelup.map import GameMap
-#from levelup.position import Position
+from levelup.position import Position
 
 class TestGameMapPositionCount(TestCase):
     def test_init(self):
         EXPECTED_NUMPOSITIONS = 100
         testobj = GameMap()
         self.assertEqual(EXPECTED_NUMPOSITIONS, testobj.numPositions)
+
+    def test_init_creates_position(self):
+        testobj = GameMap()
+        self.assertNotEqual(None, testobj.positions)
+        self.assertEqual(10, len(testobj.positions))
+
+    
 '''
 class TestGameMapGetPositions(TestCase):
     def test_init(self):
